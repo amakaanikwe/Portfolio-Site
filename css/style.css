@@ -1,0 +1,194 @@
+body {
+  color: wheat;
+  margin: none;
+}
+
+/* Navigation Bar */
+.navbar {
+    margin-bottom: 0;
+    background-color: #133957;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #bed8da !important;
+    background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+/* Parallax scrolling */
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+.headerHeight {
+  font-size: 80px;
+  padding-top: 150px;
+}
+
+.subHeaderHeight {
+  font-size: 40px;
+  padding-bottom: 150px;
+}
+
+.imageSize2 {
+  font-size: 70px;
+  width:inherit;
+  /* height: 400px !important; */
+  padding: 175px;
+}
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
+
+
+/* Landing Animation */
+header {
+  position: relative;
+  -webkit-animation-name: headerFade; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: headerFade;
+  animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes headerFade {
+  0%   {top:-20px; opacity: 0;}
+  100%  {top:0px; opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes headerFade {
+  0%   {top:-20px; opacity: 0;}
+  100%  {top:0px; opacity: 1;}
+}
+/* Landing Animation - END*/
+
+/* Container */
+.container-fluid {
+  padding: 60px 50px;
+  }
+
+.bg-grey {
+  background-color:#bed8da;
+  }
+
+.info {
+  color: black;
+
+
+}
+
+#contactContainer {
+    background-color:#133957;
+    color:#FCFEFF;
+    }
+/*
+the following: .logo & @media screen ;
+media queries will center the "logo column" on screens smaller than 768 pixels wide
+color: #f4511e; adds same color from top box
+*/
+ .logo {
+  color: #133957;
+  font-size: 200px;
+  }
+
+/* Add color to all icons and set the font-size */
+.logo-small {
+  color: #bed8da;
+  font-size: 50px;
+  }
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+ }
+
+/* Use CSS to style the images. */
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+
+/* Styling Panels */
+.panel {
+    border: 1px solid #133957;
+    border-radius:0;
+    transition: box-shadow 0.5s;
+}
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+.panel-footer .btn:hover {
+    border: 1px solid #133957;
+    background-color: #fff !important;
+    color: #133957;
+}
+.panel-heading {
+    color: #fff !important;
+    background-color: #133957 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.panel-footer {
+    background-color: #fff !important;
+}
+.panel-footer h3 {
+    font-size: 32px;
+}
+.panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #133957;
+    color: #fff;
+}
+
+
+/* Footer  */
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #133957;
+}

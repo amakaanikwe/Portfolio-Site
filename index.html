@@ -3,34 +3,25 @@
 <head>
   <title>AmakaAnikwePortfolio.com</title>
   <meta charset="utf-8">
-  <!-- bootstrap -->
 
-  <!-- The width=device-width part sets the width of the page to follow the screen-width of the device.
- -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- If you don't want to download and host Bootstrap yourself, you can include it from a CDN (Content Delivery Network). MaxCDN provides CDN support for Bootstrap's CSS and JavaScript. You must also include jQuery: -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
-<!-- Bootstrap -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-<!-- Local Files -->
-<script src="scripts/script.js"></script>
-<script src="scripts/parallax.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/parallax.js"></script>
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="mainPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<!-- Add a Navebar  -->
+<!-- Navebar  -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -51,18 +42,13 @@
   </div>
 </nav>
 
-
-
-
-
 <!-- Landing Page -->
 <header  id="landing" class="parallax" class="jumbotron text-center" class="parallax-window" data-parallax="scroll" data-image-src="images/landingImage_test2.jpg">
   <h1 class="headerHeight text-center">Amaka Anikwe</h1>
   <p class="subHeaderHeight text-center">Front-End Web Developer</p>
 </header>
 
-
-<!--About-->
+<!-- About -->
 <div id="about" class="container-fluid info">
   <div class="row">
     <div class="col-sm-8">
@@ -90,10 +76,6 @@
     <h2 class="imageSize2">Portfolio</h2>
   </div>
 </div>
-
-
-<!--
-Normally, you would add the .img-thumbnail class directly to the <img> element. In this example, we have placed a thumbnail container around the image, so that we can specify an image text as well.-->
 
 <!-- Portfolio Title Page -->
 <!-- Each section should have bullet poits of what each page features -->
@@ -169,7 +151,7 @@ Normally, you would add the .img-thumbnail class directly to the <img> element. 
 </div>
 <!-- Footer -->
 <footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
+  <a href="#mainPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
 

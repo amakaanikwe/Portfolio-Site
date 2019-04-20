@@ -19,5 +19,14 @@ $(document).ready(function(){
   });
 });
 
+//Navbar color change on scroll
+$(function () {
+  $(document).scroll(function () {
+	  var $nav = $(".navbar-fixed-top");
+	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	});
+});
+
+
 // adding parallax
   // $('.parallax-window').parallax({imageSrc: 'images/landingImage.jpg'});

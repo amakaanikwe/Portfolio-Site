@@ -6,7 +6,7 @@ body {
 /* Navigation Bar */
 .navbar {
     margin-bottom: 0;
-    background-color: #133957;
+    background-color: transparent;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -19,11 +19,21 @@ body {
 }
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #bed8da !important;
-    background-color: #fff !important;
+    /* background-color: #fff !important; */
 }
+
 .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #133957 !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar-fixed-top.scrolled .nav-link {
+  color:#555;
 }
 
 /* Parallax scrolling */
@@ -89,7 +99,7 @@ header {
   0%   {top:-20px; opacity: 0;}
   100%  {top:0px; opacity: 1;}
 }
-/* Landing Animation - END*/
+
 
 /* Container */
 .container-fluid {

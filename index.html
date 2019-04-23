@@ -7,22 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-  <script src="scripts/script.js"></script>
-  <script src="scripts/parallax.js"></script>
 </head>
 
 <body id="mainPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <!-- Navebar  -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" >
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -34,8 +27,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#landing">LANDING</a></li>
-        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#about">ABOUT</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
@@ -44,12 +38,98 @@
 
 <!-- Landing Page -->
 <header  id="landing" class="parallax" class="jumbotron text-center" class="parallax-window" data-parallax="scroll" data-image-src="images/landingImage_test2.jpg">
-  <h1 class="headerHeight text-center">Amaka Anikwe</h1>
-  <p class="subHeaderHeight text-center">Front-End Web Developer</p>
+    <h1 class="headerHeight text-center">Amaka Anikwe</h1>
+    <p class="subHeaderHeight text-center">Front-End Web Developer</p>
 </header>
 
+<!-- Skills -->
+<div id="skills" class="container-fluid">
+  <div class="row">
+      <div class="col-lg-12">
+        <h1 class="text-center">Skill Set</h1>
+        <hr/>
+      </div>
+    <div class="col-lg-3">
+      <div class="custIcon"><h1>ES6</h1></div>
+    </div>
+    <div class="col-lg-3">
+      <div class="custIcon"><h1>Angular.Js</h1></div>
+    </div>
+    <div class="col-lg-3">
+      <div class="custIcon"><h1>Node</h1></div>
+    </div>
+    <div class="col-lg-3">
+      <div class="custIcon"><h1>Git</h1></div>
+    </div>
+  </div>
+</div>
+
+<!--
+1. Add an icon (or the company's logo) to each container.
+2. Separate the icon and the "about text" by creating two columns (.col-sm-8 and .col-sm-4)
+3. Add media queries to center the "logo column" on screens smaller than 768 pixels wide.
+-->
+  <!-- Portfolio Title -->
+<div id="portfolio" id="secondImage" class="parallax" class="jumbotron text-center" class="parallax-window" data-parallax="scroll" data-image-src="images/bandw_city.jpg">
+  <div class="text-center">
+    <h2 class="imageSize2">Portfolio</h2>
+  </div>
+</div>
+
+<!-- Portfolio -->
+<!-- Each section should have bullet poits of what each page features -->
+<div class="container-fluid info white">
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Coming Soon...</h1>
+        </div>
+        <div class="panel-body">
+          <img class="img-responsive" src="images/landingImage_crop.jpg" width="400">
+        </div>
+        <div class="panel-footer">
+          <button class="btn btn-lg" class="w3-xxxlarge"><i class="fa fa-github" aria-hidden="true"></i></button>
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>Coming Soon...</h1>
+          </div>
+          <div class="panel-body">
+            <img class="img-responsive" src="images/landingImage_crop.jpg" width="400">
+          </div>
+          <div class="panel-footer">
+            <button class="btn btn-lg"><i class="fa fa-github" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </a>
+    </div>
+   <div class="col-sm-4">
+     <a href="">
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h1>Coming Soon...</h1>
+          </div>
+          <div class="panel-body">
+            <img class="img-responsive" src="images/landingImage_crop.jpg" width="400">
+          </div>
+          <div class="panel-footer">
+            <button class="btn btn-lg"><i class="fa fa-github" aria-hidden="true"></i></button>
+          </div>
+        </div>
+    </a>
+    </div>
+  </div>
+</div>
+
 <!-- About -->
-<div id="about" class="container-fluid info">
+<div id="about" class="container-fluid info abtColor">
   <div class="row">
     <div class="col-sm-8">
       <h2> About Me</h2>
@@ -65,68 +145,8 @@
   </div>
 </div>
 
-<!--
-1. Add an icon (or the company's logo) to each container.
-2. Separate the icon and the "about text" by creating two columns (.col-sm-8 and .col-sm-4)
-3. Add media queries to center the "logo column" on screens smaller than 768 pixels wide.
--->
-  <!-- Portfolio Title Page -->
-<div id="portfolio" id="secondImage" class="parallax" class="jumbotron text-center" class="parallax-window" data-parallax="scroll" data-image-src="images/bandw_city.jpg">
-  <div class="text-center">
-    <h2 class="imageSize2">Portfolio</h2>
-  </div>
-</div>
-
-<!-- Portfolio Title Page -->
-<!-- Each section should have bullet poits of what each page features -->
-<div class="container-fluid info">
-  <div class="row">
-    <div class="col-sm-4">
-      <a href="./">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Coming Soon...</h1>
-        </div>
-        <div class="panel-body">
-          <img src="images/landingImage_crop.jpg" width="300">
-        </div>
-        <div class="panel-footer">
-          <button class="btn btn-lg" class="w3-xxxlarge"><i class="fa fa-github" aria-hidden="true"></i></button>
-        </div>
-      </div>
-      </a>
-    </div>
-    <div class="col-sm-4">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Coming Soon...</h1>
-        </div>
-        <div class="panel-body">
-          <img src="images/landingImage_crop.jpg" width="300">
-        </div>
-        <div class="panel-footer">
-          <button class="btn btn-lg"><i class="fa fa-github" aria-hidden="true"></i></button>
-        </div>
-      </div>
-    </div>
-   <div class="col-sm-4">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Coming Soon...</h1>
-        </div>
-        <div class="panel-body">
-          <img src="images/landingImage_crop.jpg" width="300">
-        </div>
-        <div class="panel-footer">
-          <button class="btn btn-lg"><i class="fa fa-github" aria-hidden="true"></i></button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- Contact Container -->
-<div id="contact" id="contactContainer"class="container-fluid" class="parallax-window" data-parallax="scroll" data-image-src="images/landingImage_test2.jpg">
+<div id="contact" id="contactContainer" class="container-fluid" class="parallax-window" data-parallax="scroll" data-image-src="images/landingImage_test2.jpg">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
@@ -159,15 +179,11 @@
 
 </footer>
 
-<!-- Add scrollspy to automatically update navbar links when scrolling -->
-<!--
-<div id="landing" class="container-fluid">
-<div id="about" class="container-fluid">
-<div id="portfolio" class="container-fluid">
-<div id="contact" class="container-fluid">
--->
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/parallax.js"></script>
 
 
  </body>

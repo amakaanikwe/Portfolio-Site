@@ -215,6 +215,9 @@ color: #f4511e; adds same color from top box
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
+.panel-body {
+  padding: 0px;
+}
 .panel-footer {
     background-color: #fff !important;
 }
@@ -229,6 +232,12 @@ color: #f4511e; adds same color from top box
     margin: 15px 0;
     background-color: #003141;
     color: #fff;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

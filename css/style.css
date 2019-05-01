@@ -240,7 +240,13 @@ img {
   margin-right: auto;
 }
 
-
+/* Styling About */
+#about {
+  border-style: solid;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 35px 350px;
+}
 /* Footer  */
 footer {
     background-color: #06171d;

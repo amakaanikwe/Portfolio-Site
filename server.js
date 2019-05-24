@@ -38,7 +38,8 @@ app.post('/contact', function (req, res) {
     from: req.body.name + ' &lt;' + req.body.email + '&gt;',
     to: process.env.GMAIL_USER,
     subject: 'New message from contact form',
-    text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
+    text: `${req.body.name} (${req.body.email}) says: 
+    ${req.body.message}`
   };
   smtpTrans.sendMail(mailOpts, function (error, response) {
     if (error) {

@@ -8,15 +8,10 @@ const path = require("path");
 
 const PORT = 8080;
 
-// Data Parsing
-// app.use(
-//   express.urlencoded({
-//     extended: false
-//   })
-// );
-// app.use(express.json());
-
 app.use(bodyParser.urlencoded({extended: true}));
+
+//Static Folder
+app.use('/public', express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
@@ -51,9 +46,6 @@ app.post('/contact', function (req, res) {
   });
 });
 
-// app.post("/email", (req, res) => {
-//   res.json({ message: "Message received!!!" });
-// });
 
 
 

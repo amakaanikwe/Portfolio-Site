@@ -19,7 +19,7 @@ body {
     color: #fff !important;
 }
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #bed8da !important;
+    color: #051a1b !important;
     /* background-color: #fff !important; */
 }
 
@@ -244,7 +244,7 @@ img {
 #about {
   border-style: solid;
   border-radius: 15px;
-  padding: 30px;
+  padding: 40px;
   margin: 35px 350px;
 }
 /* Footer  */

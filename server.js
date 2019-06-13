@@ -37,7 +37,7 @@ app.post('/contact', function (req, res) {
     ${req.body.message}`
   };
   smtpTrans.sendMail(mailOpts, function (error, response) {
-    if (error) {
+    if (error) { 
       res.render('contact-failure');
     }
     else {

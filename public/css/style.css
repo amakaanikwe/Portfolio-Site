@@ -29,7 +29,7 @@ body {
 }
 
 .navbar-fixed-top.scrolled {
-  background-color: #0D1321 !important;
+  background-color: #070f13 !important;
   transition: background-color 200ms linear;
 }
 
@@ -249,7 +249,7 @@ img {
 }
 /* Footer  */
 footer {
-    background-color: #06171d;
+    background-color: #070f13;
 }
 footer .glyphicon {
   font-size: 20px;

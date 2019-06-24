@@ -178,7 +178,7 @@ color: #f4511e; adds same color from top box
   }
  }
 
-/* Use CSS to style the images. */
+/* Style images. */
 .thumbnail {
     padding: 0 0 15px 0;
     border: none;
@@ -190,6 +190,9 @@ color: #f4511e; adds same color from top box
     margin-bottom: 10px;
 }
 
+a:link {
+  text-decoration: none;
+}
 
 /* Styling Panels */
 .panel {
@@ -209,7 +212,7 @@ color: #f4511e; adds same color from top box
     color: #F5DEB3 !important;
     background-color: #003141 !important;
     padding: 25px;
-    border-bottom: 1px solid transparent;
+    border-bottom: none;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -218,6 +221,12 @@ color: #f4511e; adds same color from top box
 .panel-body {
   padding: 0px;
 }
+
+.ulPadding {
+  padding: 20px;
+  text-align: left;
+}
+
 .panel-footer {
     background-color: #fff !important;
 }

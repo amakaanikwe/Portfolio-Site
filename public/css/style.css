@@ -273,3 +273,17 @@ footer .glyphicon {
   margin-bottom: 20px;
   color: #F5DEB3;
 }
+
+footer .glyphicon:hover {
+  color: rgba(245, 222, 179, 0.541);
+}
+
+footer .fab {
+  font-size: 20px;
+  margin: 5px;
+  color: #F5DEB3;
+}
+
+footer .fab:hover {
+  color: rgba(245, 222, 179, 0.541);
+}
